@@ -113,11 +113,12 @@ showClickedElmentInReult();
 // Use Keyborad as input source
 const avilabelNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const avilabelOperations = ['+', '-', '*', '/'];
-const avilabelKEys = [...avilabelNumbers, ...avilabelOperations, 'Enter', 'Backspace', 'c'];
+const avilabelKEys = [...avilabelNumbers, ...avilabelOperations, 'Enter', 'Backspace', 'c','.',];
 
 const keyBoradWithHover = (key) => {
   if (avilabelKEys.includes(key)) {
     const ele = document.querySelector(`[data-value="${key}"]`);
+  
     ele.classList.add('hover');
     ele.click();
     setTimeout(() => {
